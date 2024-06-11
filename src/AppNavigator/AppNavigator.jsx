@@ -5,11 +5,21 @@ import { Feather } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native';
 import Home from '../pages/Home/index';
 import Detail from '../pages/Detail/index';
+import LoginScreen from '../pages/LoginScreen/LoginScreen';
+import RegisterScreen from '../pages/RegisterScreen/RegisterScreen';
 const Stack = createStackNavigator();
 function AppNavigator() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen
+                    name="LoginScreen"
+                    component={LoginScreen}
+                />
+                <Stack.Screen 
+                    name="RegisterScreen"
+                    component={RegisterScreen}
+                />
                 <Stack.Screen
                     name="Home"
                     component={Home}

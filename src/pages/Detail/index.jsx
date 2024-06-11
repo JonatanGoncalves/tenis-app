@@ -1,14 +1,11 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
 import Dot from '../../components/Dot';
 import SizeButton from '../../components/SizeButton';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 
-export default function Detail({ navigation }) {
-    navigation.setOptions({
-        headerTitle: 'Nike Downshifter 10'
-    })
+export default function Detail() {
     return (
         <ScrollView style={styles.container}>
             <Image
